@@ -7,6 +7,7 @@
 ## When set() is executed, it assigns the input argument to the x object in the parent environment, and
 ## it assigns the value of NULL to the i object in the parent environment, thus clearing any value of i that had been cached by a prior execution of cacheSolve().
 ## In this way, when a new value of x is given, the cacheSolve() is cleared and it is forced to recalculate instead of giving the wrong return.
+## We are using the <<- command to assign the value on the right side of the operator to an object in the parent environment named by the object on the left side of the operator.
 
 ## The second behavior that has to be defined in makeCacheMatrix() is get(), the getter for the matrix x.
 
